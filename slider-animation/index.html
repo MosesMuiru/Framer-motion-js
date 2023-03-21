@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@9.1.1/modules/scrollbar/scrollbar.min.css " rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.css" integrity="sha512-Ze01E5cRDy3ZSlrfq1xOjnVVuKh8GOC0AUCdBU6bgPQY5qoWzTKqijsLRm1ZONCH7ydBsOz+Z+9jLwz+97MGaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.css" integrity="sha512-ZOhNKDt0whrHDdUeNKjuq2C8hturzwCSuCfrOIMIfy9QDgpSqDEebdkGQXvXh1xHmZOHSelDBrTLj6XlqbHz6g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- this is the cdn of the slider -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="swiper" pagination="true" navigation="true" >
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"> <img src="./images/image1.jpg" alt="">
+              </div>
+              <div class="swiper-slide"><img src="./images/image2.jpg" alt=""></div>
+              <div class="swiper-slide"> <img src="./images/image3.jpg" alt=""></div>
+
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+    </div>
+
+    <!-- script from the cdn version -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js "></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    autoPlay:{
+        delay:300,
+        disableOnInteration:false
+    },
+  // Optional parameters
+//   direction: 'vertical',
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:"true"
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    // el: '.swiper-scrollbar',
+  },
+})
+</script>
+</body>
+</html>
